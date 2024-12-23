@@ -1,5 +1,7 @@
 <script>
     import { onMount } from "svelte";
+    let alpha = 0.333;
+    let beta = 0.2;
     function draw_canvas(context) {
         context.beginPath();
         context.arc(500, 500, 500, 0, Math.PI, true);
@@ -10,13 +12,11 @@
         context.fill();
     }
 
-    function draw_grid(context) {
-        context.fillStyle = "rgb(255 255 255 / 50%)";
-        context.fillRect(0, 0, 2000, 1000);
+    function draw_grid(context, a, b) {
         for (let i = 0; i < 63; i++) {
             for (let j = 0; j < 29; j++) {
                 context.beginPath();
-                context.arc(i * 20 + 5, j * 20 + 5, 2, 0, 2 * Math.PI);
+                context.arc(i * 20 + 5, j * 20 + 5, j, 0, 2 * Math.PI);
                 // context.strokeStyle = "red";
                 // context.lineWidth = 1;
                 context.fillStyle = "black";
@@ -24,6 +24,9 @@
                 context.fill();
             }
         }
+
+        context.fillStyle = "rgb(255 255 255 / 25%)";
+        context.fillRect(0, 0, 2000, 1000);
     }
 
     function apply_bg(canvas) {
@@ -34,8 +37,14 @@
     onMount(() => {
         const cnv = document.getElementById("bg-canvas");
         const ctx = cnv.getContext("2d");
-        draw_grid(ctx);
+        draw_grid(ctx, alpha, beta);
         apply_bg(cnv);
+        // const interval = setInterval(() => {
+        //     draw_grid(ctx, alpha, beta);
+        //     apply_bg(cnv);
+        //     alpha = alpha + 0.01;
+        //     beta = beta + 0.01;
+        // }, 1000);
     });
 </script>
 
@@ -54,6 +63,7 @@
             <p>
                 I know absolutely nothing about CI/CD so I hope this works. 🤞
             </p>
+            <br />
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
                 iusto debitis, ullam dolores sapiente odit tempore maxime
@@ -86,7 +96,7 @@
         /* background-color: rgba(240, 240, 240, 0.4); */
     }
     #main-card-contents p {
-        color: whitesmoke;
+        color: rgb(184, 184, 184);
     }
     canvas {
         display: none;
