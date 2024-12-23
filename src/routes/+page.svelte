@@ -4,11 +4,9 @@
 <main class=" flex-grow grid p-4 bg-zinc-900 place-content-center w-screen">
     <div id="main-card" class=" h-72 w-96 p-10">
         <div id="main-card-contents">
-            <h1 class="text-center">Welcome to SvelteKit</h1>
+            <h1 class="text-center">Testing Testing</h1>
             <p>
-                Visit <a href="https://svelte.dev/docs/kit"
-                    >svelte.dev/docs/kit</a
-                > to read the documentation
+                I know absolutely nothing about CI/CD so I hope this works. 🤞
             </p>
         </div>
     </div>
