@@ -4,11 +4,13 @@
     let { children } = $props();
 </script>
 
-<div class="flex flex-col min-h-screen">
+<div class="flex flex-col min-h-screen bg-zinc-900">
     <header
-        class=" h-20 bg-zinc-900 content-center border-solid border-b-2 border-slate-300 font-serif"
+        class=" h-20 bg-zinc-950 content-center border-solid border-b-2 border-[#D10000] font-serif"
     >
-        <h1 class=" text-5xl text-slate-50 pl-9">Portfolio</h1>
+        <h1 class=" text-5xl text-slate-200 sm:pl-9 sm:text-left text-center">
+            Portfolio
+        </h1>
     </header>
     {@render children()}
 </div>
