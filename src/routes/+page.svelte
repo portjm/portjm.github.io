@@ -86,6 +86,6 @@
         background-image: url("bg.jpg");
         background-size: cover;
         background-position: center;
-        box-shadow: inset 0 0 0 2000px rgba(9, 9, 11, 0.9);
+        box-shadow: inset 0 0 0 2000px rgba(9, 9, 11, 0.5);
     }
 </style>
