@@ -36,10 +36,10 @@
         <div class="p-8">
             <h1 class=" text-4xl mb-6">Technical Specs</h1>
             <div id="tech-logos">
-                <img src="/rs.png" width="100px" height="100px" alt="Rust" />
-                <img src="/py.png" width="100px" alt="Python" />
-                <img src="/pytor.png" width="200px" alt="PyTorch" />
-                <img src="/sv.png" width="100px" alt="Svelte/Sveltekit" />
+                <img src="rs.png" width="100px" height="100px" alt="Rust" />
+                <img src="py.png" width="100px" alt="Python" />
+                <img src="pytor.png" width="200px" alt="PyTorch" />
+                <img src="sv.png" width="100px" alt="Svelte/Sveltekit" />
             </div>
         </div>
     </div>
