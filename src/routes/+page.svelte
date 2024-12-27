@@ -44,6 +44,7 @@
                 <img src="py.png" width="100px" alt="Python" />
                 <img src="pytor.png" width="200px" alt="PyTorch" />
                 <img src="sv.png" width="100px" alt="Svelte/Sveltekit" />
+                <img src="cuda.png" width="200px" alt="PyTorch" />
             </div>
         </div>
     </div>
@@ -59,7 +60,7 @@
                         <img
                             src="https://placehold.co/600x300"
                             alt="placeholder"
-                        />
+                        /><br />
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Minus labore a reprehenderit. Enim earum nam, quam tenetur
                         itaque doloribus reprehenderit voluptate hic expedita at
@@ -71,7 +72,7 @@
                         <img
                             src="https://placehold.co/600x300"
                             alt="placeholder"
-                        />
+                        /><br />
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Exercitationem dicta officia aliquam sit magni dignissimos
                         labore placeat numquam id iste fugiat molestiae natus architecto
